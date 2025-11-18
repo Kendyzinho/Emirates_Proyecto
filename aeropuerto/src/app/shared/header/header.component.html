@@ -1,7 +1,7 @@
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Logo
-        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Emirates_logo.svg" alt="emirates">
+      <a class="navbar-brand" href="#">
+        <img src="assets/emirates.png" alt="Emirates" height="40">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,16 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Ayuda</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="toggleCart()" style="cursor: pointer;">Carrito</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
+
+
+<div class="cart-sidebar" [class.active]="showCart">
+  <button class="close-btn" (click)="toggleCart()">✕</button>
+  <app-cart></app-cart>
+</div>
