@@ -13,6 +13,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { LoginComponent } from './auth/login/login.component';
 import { CartComponent } from './cliente/cart/cart.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     // Pages
     LoginComponent,
     CartComponent,
-    DashboardComponent
+    DashboardComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
