@@ -1,28 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-// Componentes existentes
-import { LoginComponent } from './auth/login/login.component';
-import { CartComponent } from './cliente/cart/cart.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-
-// Guards
-import { AuthGuard } from './core/auth.guard';
-import { RoleGuard } from './core/role.guard';
+// Componentes
+import { RegisterComponent } from './register/register.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 const routes: Routes = [
-
-  // Página inicial -> login
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
-
-  { path: 'login', component: LoginComponent },
-  { path: 'cart', component: CartComponent, canActivate: [AuthGuard] },
-
-  // solo admin
-  { path: 'admin', component: DashboardComponent, canActivate: [RoleGuard] },
-
-  // cualquier ruta desconocida -> login
-  { path: '**', redirectTo: '/login' }
+  { path: '', redirectTo: '/home', pathMatch: 'full'},
+  { path: 'home', component: HeaderComponent},
+  { path: 'register', component: RegisterComponent},
+  { path: '**', redirectTo: '/home'}
 ];
 
 @NgModule({
