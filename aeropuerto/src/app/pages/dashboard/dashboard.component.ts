@@ -17,15 +17,10 @@ import { HeaderComponent } from "src/app/shared/header/header.component";
 // hay q distinguir los tipos de pasajeros, si son adultos (+12) o niños (2<x<12) o bbebes (<2)
 
 // si el tipo de vieja es ida y vuelta, se debe elegir fecha de retorno. esta esta bloqueada si es solo ida,
-// pero si el tipo es multiviaje, se deben ir reiterando los campos, si tiene sentido?? Mirar el sitio web oficial de 
-// Emirates para claridad
-
-// quiza deberia estar el logo de emirates en el header?
+// pero si el tipo es multiviaje, se deben ir reiterando los campos, las veces necesitadas
 
 // la interfaz del panel cliente se siente muy vacia, pienso añadir info de la empresa, o quiza destinos populares???
-// de cualquier modo creo q la interfaz para la reserva deberia ser más grande
-
-// el panel ni siquiera cubre toda la pantalla, hay que hacer un contenedor mayor para centralizar 
+// de cualquier modo creo q la interfaz para la reserva deberia ser más grande 
 
 // el input de fechas estan muy abajo, descentralidos por el label que tienen arriba, quiza quitarlos o moverlos
 
