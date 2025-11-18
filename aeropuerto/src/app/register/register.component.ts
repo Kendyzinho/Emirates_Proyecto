@@ -12,7 +12,9 @@ export class RegisterComponent {
 
     nombre: '',
     apellido: '',
-    email: ''
+    email: '',
+    password: '',
+    confirmPassword: ''
   }
   
   procesarInformacion(){
