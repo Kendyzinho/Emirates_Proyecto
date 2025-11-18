@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 // IMPORTS DE COMPONENTES
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
 
 import { LoginComponent } from './auth/login/login.component';
 import { CartComponent } from './cliente/cart/cart.component';
@@ -18,6 +19,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     AppComponent,
     NavbarComponent,
     FooterComponent,
+    HeaderComponent,
 
     // Pages
     LoginComponent,
