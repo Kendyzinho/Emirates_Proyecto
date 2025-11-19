@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Componentes
 import { RegisterComponent } from './register/register.component';
-import { HeaderComponent } from './shared/header/header.component';
+import { HomeComponent } from './shared/home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
-  { path: 'home', component: HeaderComponent},
+  { path: 'home', component: HomeComponent},
   { path: 'register', component: RegisterComponent},
   { path: '**', redirectTo: '/home'}
 ];

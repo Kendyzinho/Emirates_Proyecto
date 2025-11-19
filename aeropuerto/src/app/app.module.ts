@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 
 // IMPORTS DE COMPONENTES
 import { FooterComponent } from './shared/footer/footer.component';
-import { HeaderComponent } from './shared/header/header.component';
+import { HomeComponent } from './shared/home/home.component';
 import { LoginComponent } from './auth/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { RegisterComponent } from './register/register.component';
@@ -16,7 +16,7 @@ import { RegisterComponent } from './register/register.component';
   declarations: [
     AppComponent,
     FooterComponent,
-    HeaderComponent,
+    HomeComponent,
     LoginComponent,
     DashboardComponent,
     RegisterComponent
