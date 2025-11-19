@@ -1,0 +1,18 @@
+.admin-contenedor {
+  display: flex;
+  height: 100vh;
+}
+
+.menu-lateral {
+  width: 250px;
+}
+
+.menu-lateral .nav-link.active {
+  background: #dc3545;
+  border-radius: 5px;
+}
+
+.contenido {
+  flex: 1;
+  overflow-y: auto;
+}

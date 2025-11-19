@@ -1,0 +1,16 @@
+<div class="d-flex">
+  <div class="sidebar bg-dark text-white p-3" style="min-width: 250px; height: 100vh;">
+    <h3>Admin</h3>
+
+    <ul class="nav flex-column">
+      <li class="nav-item"><a routerLink="/admin/dashboard" class="nav-link text-white">Dashboard</a>
+      <li class="nav-item"><a routerLink="/admin/vuelos" class="nav-link text-white">Vuelos</a>
+      <li class="nav-item"><a routerLink="/admin/promociones" class="nav-link text-white">Promociones</a>
+
+    </ul>
+  </div>
+
+  <div class="flex-grow-1 p-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>

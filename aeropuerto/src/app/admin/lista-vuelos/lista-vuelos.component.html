@@ -1,0 +1,46 @@
+<div class="container">
+
+  <div class="d-flex justify-content-between mb-3">
+    <h2>Lista de Vuelos</h2>
+    <a routerLink="/admin/vuelos/nuevo" class="btn btn-danger">
+        Nuevo Vuelo
+    </a>
+  </div>
+
+  <table class="table table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>ID</th>
+        <th>Origen</th>
+        <th>Destino</th>
+        <th>Fecha</th>
+        <th>Capacidad</th>
+        <th>Tarifa (USD)</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let vuelo of vuelos">
+        <td>{{ vuelo.id }}</td>
+        <td>{{ vuelo.origen }}</td>
+        <td>{{ vuelo.destino }}</td>
+        <td>{{ vuelo.fecha }}</td>
+        <td>{{ vuelo.capacidad }}</td>
+        <td>{{ vuelo.tarifa }}</td>
+
+        <td>
+          <a [routerLink]="['/admin/vuelos/editar', vuelo.id]" class="btn btn-warning btn-sm me-2">
+            Editar
+          </a>
+
+          <button class="btn btn-danger btn-sm" (click)="eliminar(vuelo.id)">
+            Eliminar
+          </button>
+        </td>
+      </tr>
+    </tbody>
+
+  </table>
+
+</div>

@@ -19,10 +19,17 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent, canActivate: [AuthGuard] },
 
   // solo admin
-  { path: 'admin', component: DashboardComponent, canActivate: [RoleGuard] },
+  //{ path: 'admin', component: DashboardComponent, canActivate: [RoleGuard] },
+
+  //Ventana de gestion de admin(Denis)
+  {path: 'admin', canActivate:[RoleGuard],loadChildren:() => import('./admin/admin.module').then(m => m.AdminModule)},
+ 
+
 
   // cualquier ruta desconocida -> login
   { path: '**', redirectTo: '/login' }
+
+
 ];
 
 @NgModule({
